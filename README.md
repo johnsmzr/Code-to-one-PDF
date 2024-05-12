@@ -1,6 +1,6 @@
 # Code to PDF Converter [中文](Chinese-README.md)
 
-**Code to PDF Converter** is a Python tool for converting source code files within a directory into a single PDF document, while allowing you to specify files and directories to exclude through a configuration file. This tool is particularly useful for developers who need to archive or share their code repositories in a print-friendly format.
+**Code to PDF Converter** is a Python tool for converting source code files within a directory into a single PDF document, while allowing you to specify files and directories to exclude through a configuration file. This tool is particularly useful for developers who need to archive or send their code repositories to **AI**.
 
 ## Features
 
