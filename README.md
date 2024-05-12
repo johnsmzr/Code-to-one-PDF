@@ -49,6 +49,12 @@ patterns:
 
 ```
 
+## 编译成二进制文件
+
+```bash
+pyinstaller --onefile code-to-pdf.py
+```
+
 ## FAQ 常见问题解答
 
 **Q: 我可以根据文件内容排除文件吗？** 
