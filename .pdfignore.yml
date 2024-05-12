@@ -13,3 +13,5 @@ files:
 patterns:
   - '*.pdf'
   - '*.tmp'
+  # - '*.md'
+  # - '*.py'
