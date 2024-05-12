@@ -6,6 +6,32 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.cidfonts import UnicodeCIDFont
 
+# Define file extensions to consider as code files
+code_extensions = [
+    ".py",
+    ".js",
+    ".html",
+    ".css",
+    ".php",
+    ".java",
+    ".cpp",
+    ".c",
+    ".h",
+    ".hpp",
+    ".cs",
+    ".rb",
+    ".pl",
+    ".sh",
+    ".sql",
+    ".json",
+    ".xml",
+    ".yaml",
+    ".yml",
+    ".md",
+    ".rst",
+    ".txt",
+]
+
 def load_exclusions(config_path):
     with open(config_path, 'r', encoding='utf-8') as file:
         config = yaml.safe_load(file)
@@ -24,7 +50,7 @@ def generate_pdf(source_folder, output_pdf, config_path):
     for root, dirs, files in os.walk(source_folder, topdown=True):
         dirs[:] = [d for d in dirs if d not in excluded_dirs]  # Modify the dirs in-place to skip excluded directories
         for filename in files:
-            if any(filename.endswith(ext) for ext in ['.py', '.txt']):  # Extend or change file types as needed
+            if any(filename.endswith(ext) for ext in code_extensions):  # Extend or change file types as needed
                 if filename not in excluded_files and not any(root.startswith(os.path.join(source_folder, d)) for d in excluded_dirs):
                     filepath = os.path.join(root, filename)
                     with open(filepath, 'r', encoding='utf-8') as file:
@@ -37,4 +63,4 @@ def generate_pdf(source_folder, output_pdf, config_path):
     doc.build(story)
 
 # 使用该函数
-generate_pdf('./', 'output_code3.pdf', '.pdfignore.yml')
+generate_pdf('./', 'output_code.pdf', '.pdfignore.yml')
