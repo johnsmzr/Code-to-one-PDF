@@ -83,5 +83,4 @@ def generate_pdf(source_folder, output_pdf, config_path):
     doc.build(story)
 
 
-# 使用该函数
 generate_pdf("./", "Code.pdf", ".pdfignore.yml")
