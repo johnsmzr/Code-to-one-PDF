@@ -73,12 +73,14 @@ patterns:
 
 ## FAQ 常见问题解答
 
-**Q: Can I exclude files based on their content?** <br>
+**Q: Can I exclude files based on their content?** 
+
 **A: Currently, the exclusion is based only on file names and directory paths specified in the config file.**
 
 
 
-**Q: 我可以根据文件内容排除文件吗？** <br>
+**Q: 我可以根据文件内容排除文件吗？** 
+
 **A: 目前，排除仅基于配置文件中指定的文件名和目录路径。**
 
 ---

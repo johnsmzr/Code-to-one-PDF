@@ -4,6 +4,8 @@ directories:
   - public/system
   - tmp
   - vendor
+  - build
+  - dist
 files:
   - .DS_Store
   - database.yml
@@ -11,4 +13,3 @@ files:
 patterns:
   - '*.pdf'
   - '*.tmp'
-  # - '*.py'
