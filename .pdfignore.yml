@@ -10,8 +10,9 @@ files:
   - .DS_Store
   - database.yml
   - favicon.ico
+  - requirements.txt
 patterns:
   - '*.pdf'
   - '*.tmp'
-  # - '*.md'
+  - '*.md'
   # - '*.py'
