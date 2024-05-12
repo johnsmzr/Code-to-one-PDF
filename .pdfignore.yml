@@ -1,0 +1,14 @@
+directories:
+  - .git
+  - log
+  - public/system
+  - tmp
+  - vendor
+files:
+  - .DS_Store
+  - database.yml
+  - favicon.ico
+patterns:
+  - '*.pdf'
+  - '*.tmp'
+  # - '*.py'
